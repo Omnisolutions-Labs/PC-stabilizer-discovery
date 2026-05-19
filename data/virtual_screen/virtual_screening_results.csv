@@ -1,0 +1,31 @@
+compound_en,compound_cn,anion_type,is_polymer,mw,fg_density,predicted_score,rec
+Sodium hexamethaphosphate (SHMP),六偏磷酸钠,polyphosphate,1,611.77,6.0,0.992,★★ Strong
+Sodium pyrophosphate decahydrate,焦磷酸钠十水,polyphosphate,0,446.06,4.0,0.99,★★ Strong
+Sodium pyrophosphate,焦磷酸钠,polyphosphate,0,265.9,4.0,0.986,★★ Strong
+Disodium dihydrogen pyrophosphate,酸式焦磷酸钠,polyphosphate,0,221.9,2.0,0.986,★★ Strong
+Sodium acid pyrophosphate,酸式焦磷酸钠 (SAPP),polyphosphate,0,221.9,2.0,0.986,★★ Strong
+Tetrasodium pyrophosphate,四焦磷酸钠,polyphosphate,0,265.9,4.0,0.986,★★ Strong
+Heparin sodium,肝素钠,sulfate,1,15000.0,2.7,0.837,★★ Strong
+Carrageenan lambda,λ-卡拉胶,sulfate,1,400000.0,2.4,0.837,★★ Strong
+Sodium phytate (IP6),植酸钠,phosphate,0,660.0,6.0,0.029,—
+Chitosan sulfate,硫酸壳聚糖,sulfate,1,20000.0,1.5,0.021,—
+Carrageenan iota,ι-卡拉胶,sulfate,1,400000.0,1.6,0.021,—
+Dipotassium phosphate,磷酸氢二钾,phosphate,0,174.18,2.0,0.016,—
+Gellan gum,结冷胶,carboxylate,1,500000.0,0.5,0.012,—
+Sodium dextran phosphate,葡聚糖磷酸钠,phosphate,1,40000.0,1.2,0.012,—
+Carrageenan furcellaran,岩藻聚糖,sulfate,1,100000.0,0.8,0.012,—
+Locust bean gum,刺槐豆胶,hydroxyl,1,300000.0,3.0,0.012,—
+Konjac glucomannan,魔芋葡甘聚糖,hydroxyl,1,1000000.0,3.0,0.012,—
+Whey protein isolate,乳清蛋白,carboxylate,1,18000.0,0.3,0.012,—
+Sodium caseinate,酪蛋白酸钠,carboxylate,1,24000.0,0.3,0.012,—
+CMC (carboxymethyl cellulose),羧甲基纤维素,carboxylate,1,250000.0,0.7,0.012,—
+Carrageenan kappa,κ-卡拉胶,sulfate,1,400000.0,0.8,0.012,—
+Pectin (low methoxyl),低酯果胶,carboxylate,1,150000.0,0.7,0.012,—
+Xanthan gum,黄原胶,carboxylate,1,2000000.0,0.5,0.012,—
+Alginic acid (low Mw),低分子量海藻酸,carboxylate,1,30000.0,1.0,0.012,—
+Hyaluronic acid,透明质酸,carboxylate,1,1000000.0,0.5,0.012,—
+Chondroitin sulfate,硫酸软骨素,sulfate,1,30000.0,1.0,0.012,—
+Pectin (high methoxyl),高酯果胶,carboxylate,1,150000.0,0.3,0.012,—
+Sodium ascorbate,抗坏血酸钠,carboxylate,0,198.1,1.0,0.006,—
+Trisodium citrate,柠檬酸三钠,carboxylate,0,258.1,3.0,0.006,—
+Polylysine epsilon,ε-聚赖氨酸,amide,1,4000.0,0.0,0.006,—

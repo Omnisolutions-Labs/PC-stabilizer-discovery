@@ -1,0 +1,10 @@
+{
+  "n_compounds": 49,
+  "n_positives": 4,
+  "n_negatives": 45,
+  "QSPR_LOO_AUC": 0.883,
+  "Baseline_LOO_AUC": 0.75,
+  "LLM_zero_shot_AUC": 0.958,
+  "QSPR_LOO_accuracy": 0.939,
+  "seed": 20260519
+}

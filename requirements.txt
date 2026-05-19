@@ -1,0 +1,12 @@
+# Python dependencies for PC-stabilizer-discovery
+# Tested with Python 3.13.x; bit-level reproducibility under random_state=20260519
+
+numpy>=1.26
+pandas>=2.0
+scipy>=1.15
+matplotlib>=3.8
+rdkit>=2024.3
+lightgbm>=4.0
+shap>=0.45
+scikit-learn>=1.5
+openpyxl>=3.1

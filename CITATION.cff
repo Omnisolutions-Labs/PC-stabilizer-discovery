@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite the article and the dataset DOI."
+type: software
+title: "PC-stabilizer-discovery"
+abstract: >-
+  Chemoinformatics-guided discovery of food-grade anionic stabilizers
+  for phycocyanin under acidic conditions. Includes a 49-compound curated
+  training dataset, LightGBM QSPR + chemistry-prior heuristic pipeline,
+  virtual screening of 30 GRAS additives, and 24-bottle wet-lab validation
+  data with UV-Vis and ζ-potential measurements.
+authors:
+  - family-names: "Chuang"
+    given-names: "Kevin"
+    affiliation: "Omnisolutions Laboratory Holdings Limited, Hong Kong SAR, China"
+  - family-names: "Luo"
+    given-names: "Lorry"
+    affiliation: "Omnisolutions Laboratory Holdings Limited, Hong Kong SAR, China"
+  - family-names: "Law"
+    given-names: "Luke"
+    email: "luke.law@omnisolutionslabs.com"
+    affiliation: "Omnisolutions Laboratory Holdings Limited, Hong Kong SAR, China"
+version: "0.1.0"
+date-released: "2026-05-19"
+url: "https://github.com/Omnisolutions-Labs/PC-stabilizer-discovery"
+repository-code: "https://github.com/Omnisolutions-Labs/PC-stabilizer-discovery"
+license: MIT
+keywords:
+  - phycocyanin
+  - food stabilization
+  - chemoinformatics
+  - QSPR
+  - virtual screening
+  - GRAS additives
+  - LightGBM
+  - SHAP
+preferred-citation:
+  type: article
+  title: >-
+    Chemoinformatics-guided discovery of food-grade anionic stabilizers
+    for phycocyanin under acidic conditions: integrating QSPR, a chemistry-prior
+    heuristic, and virtual screening of GRAS additives
+  authors:
+    - family-names: "Chuang"
+      given-names: "Kevin"
+    - family-names: "Luo"
+      given-names: "Lorry"
+    - family-names: "Law"
+      given-names: "Luke"
+  journal: "ACS Food Science & Technology"
+  year: 2026
+  notes: "Manuscript submitted"
