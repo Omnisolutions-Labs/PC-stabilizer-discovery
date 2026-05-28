@@ -6,7 +6,7 @@ This repository accompanies the manuscript:
 
 > Chuang, K.; Luo, L.; Law, L. *Chemoinformatics-guided discovery of food-grade anionic stabilizers for phycocyanin under acidic conditions: integrating QSPR, a chemistry-prior heuristic, and virtual screening of GRAS additives.* (submitted, 2026).
 
-A 49-compound training dataset, a LightGBM + RDKit QSPR pipeline, a chemistry-prior heuristic baseline, virtual screening of 30 GRAS food additives, and 24-bottle wet-lab validation data are all provided, along with the figures and code used to produce them.
+A 48-compound training dataset, a LightGBM + RDKit QSPR pipeline, a chemistry-prior heuristic baseline, virtual screening of 30 GRAS food additives, and 24-bottle wet-lab validation data are all provided, along with the figures and code used to produce them.
 
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
@@ -14,8 +14,8 @@ A 49-compound training dataset, a LightGBM + RDKit QSPR pipeline, a chemistry-pr
 
 ## Highlights
 
-- **First QSPR model** for phycocyanin acid-stabilizer discovery (49-compound dataset).
-- Descriptor-based **LightGBM AUC = 0.88** (leave-one-out CV); chemistry-prior heuristic AUC = 0.96 — illustrating that explicit domain priors complement descriptor models in the small-data regime.
+- **First QSPR-ready open dataset** for phycocyanin acid-stabilizer discovery (48 unique compounds, 3 effective hits).
+- Descriptor-based **LightGBM LOO-AUC = 0.73** (marginally above a single-feature baseline at 0.67); a chemistry-prior heuristic encoding anion-type priors reaches **AUC = 0.95** — illustrating that, in this genuinely small-data regime, explicit chemical knowledge outperforms descriptor-based ML.
 - **Virtual screening of 30 GRAS food additives** ranked the pyrophosphate family at the top.
 - **Wet-lab validation (n = 3 × 8 groups)** confirmed sodium hexametaphosphate (SHMP, 78.1% color retention), tetrasodium pyrophosphate (TSPP, 54.1%), and sodium phytate (IP₆, 52.7%) as new effective stabilizers; an IP₆ + STPP ternary combination reached 83.8% retention.
 - **Mechanistic evidence**: per-bottle ζ-potential correlates with color retention (Pearson r = −0.82, p = 1 × 10⁻⁶, n = 24).
@@ -33,7 +33,7 @@ PC-stabilizer-discovery/
 │
 ├── data/
 │   ├── training/
-│   │   ├── curated_compounds.csv        ← 49-compound dataset with SMILES + labels
+│   │   ├── curated_compounds.csv        ← 48-compound dataset with SMILES + labels
 │   │   ├── features_matrix.csv          ← 21-dimensional feature matrix
 │   │   ├── training_predictions.csv     ← QSPR + chemistry-prior probabilities (LOO-CV)
 │   │   └── model_metrics.json           ← AUC, accuracy, n

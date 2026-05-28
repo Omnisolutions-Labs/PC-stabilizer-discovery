@@ -64,17 +64,17 @@ LGBMClassifier(
 )
 ```
 
-`pos_weight` is computed dynamically as `(n_total − n_positive) / n_positive` ≈ 11.25 for the 49-compound dataset. Leave-one-out cross-validation is used due to the small dataset size; 49 LightGBM models are trained, each on 48 examples.
+`pos_weight` is computed dynamically as `(n_total − n_positive) / n_positive` = 15 for the corrected 48-compound dataset (3 positives, 45 negatives). Leave-one-out cross-validation is used due to the small dataset size; 48 LightGBM models are trained, each on 47 examples.
 
 ## C. SHAP attribution
 
-`shap.TreeExplainer` is applied to the final model (trained on all 49 examples) to obtain Shapley values for each feature on each compound. The summary plot reflects the absolute Shapley contributions across the full dataset.
+`shap.TreeExplainer` is applied to the final model (trained on all 48 examples) to obtain Shapley values for each feature on each compound. The summary plot reflects the absolute Shapley contributions across the full dataset.
 
 ## D. Chemistry-prior heuristic
 
 The chemistry-prior heuristic is a deterministic rule set assigning P(effective) directly from compound name and anion class (see `code/qspr_pipeline.py`, function `chem_prior` / `llm_like_zero_shot`). It encodes published pKa values and reported activity of major anion classes at pH 3.
 
-Probabilities are calibrated against the 49-compound training set; refinement against an external benchmark dataset is left to future work.
+Probabilities are calibrated against the 48-compound training set; refinement against an external benchmark dataset is left to future work.
 
 ## E. Virtual screening library
 
@@ -92,7 +92,7 @@ Random seed: `SEED = 20260519`. All NumPy random generators, LightGBM `random_st
 
 ## H. Limitations
 
-1. Class imbalance (4 positives / 45 negatives) limits LOO-CV power; SHAP attributions are interpreted qualitatively.
+1. Class imbalance (3 positives / 45 negatives) fundamentally limits LOO-CV power; SHAP attributions are interpreted qualitatively.
 2. Polymer compounds with default descriptors may underestimate within-class differences.
 3. Sodium phytate (IP₆) was a known descriptor-model false negative; the model's applicability domain is therefore limited to linear polyphosphates and acyclic polyanions.
 4. The 7-day accelerated assay at 46 °C is a surrogate for the industrially relevant 30-day shelf life at 25 °C; real-product testing is outside the present scope.

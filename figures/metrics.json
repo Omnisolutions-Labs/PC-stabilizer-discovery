@@ -1,0 +1,11 @@
+{
+  "n": 48,
+  "positives": 3,
+  "AUC_QSPR": 0.733,
+  "AUC_baseline": 0.667,
+  "AUC_chem_prior": 0.948,
+  "top1_GRAS": "Sodium pyrophosphate decahydrate",
+  "top1_P": 0.991,
+  "phytate_rank": 9,
+  "phytate_P": 0.045
+}

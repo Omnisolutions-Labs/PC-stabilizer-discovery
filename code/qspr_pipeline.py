@@ -259,7 +259,7 @@ for i,(t,h) in enumerate(zip(values, pos_counts)):
     ax.text(i, t+0.5, f"{h}/{t}", ha="center", fontsize=10)
 ax.set_ylabel("Number of compounds")
 ax.set_xlabel("Screening round (yyyy.mm)")
-ax.set_title("Figure 1 · Iterative screening dataset: 3 rounds, 49 compounds, hit rate ≈ 6%")
+ax.set_title(f"Figure 1 · Iterative screening dataset: 3 rounds, {len(df)} compounds, hit rate ≈ {100*y.sum()/len(df):.0f}%")
 ax.legend(frameon=False)
 ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
 plt.tight_layout(); plt.savefig(ROOT/"Fig1_dataset_overview.png", dpi=300); plt.close()

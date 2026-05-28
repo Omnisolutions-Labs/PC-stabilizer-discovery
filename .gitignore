@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.coverage
+*.cover
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local-only artifacts (intermediate / draft figures, scratch data)
+scratch/
+local_runs/
+*.log
+
+# Outputs that should regenerate from code (kept canonical copies under data/ and figures/)
+# Comment these out if you want to commit fresh runs.
+output_runs/
+*.bak*

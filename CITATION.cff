@@ -4,7 +4,7 @@ type: software
 title: "PC-stabilizer-discovery"
 abstract: >-
   Chemoinformatics-guided discovery of food-grade anionic stabilizers
-  for phycocyanin under acidic conditions. Includes a 49-compound curated
+  for phycocyanin under acidic conditions. Includes a 48-compound curated
   training dataset, LightGBM QSPR + chemistry-prior heuristic pipeline,
   virtual screening of 30 GRAS additives, and 24-bottle wet-lab validation
   data with UV-Vis and ζ-potential measurements.
@@ -19,8 +19,8 @@ authors:
     given-names: "Luke"
     email: "luke.law@omnisolutionslabs.com"
     affiliation: "Omnisolutions Laboratory Holdings Limited, Hong Kong SAR, China"
-version: "0.1.0"
-date-released: "2026-05-19"
+version: "1.0.0"
+date-released: "2026-05-23"
 url: "https://github.com/Omnisolutions-Labs/PC-stabilizer-discovery"
 repository-code: "https://github.com/Omnisolutions-Labs/PC-stabilizer-discovery"
 license: MIT
